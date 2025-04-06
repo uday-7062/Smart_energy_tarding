@@ -1,4 +1,4 @@
-// App.js - Main Application Component
+// App.js - Updated to pass weatherCondition to UserPortal
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import CommunityGrid from './components/CommunityGrid';
@@ -194,6 +194,7 @@ function App() {
             households={households}
             transactions={transactions}
             currentHour={currentHour}
+            weatherCondition={weatherCondition}
           />
         )}
       </main>
