@@ -1,8 +1,9 @@
-// UserPortal.js - Component for user energy purchasing interface
+// UserPortal.js - Updated with AI Energy Assistant
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import AIEnergyAssistant from './AIEnergyAssistant';
 
-const UserPortal = ({ households, transactions, currentHour }) => {
+const UserPortal = ({ households, transactions, currentHour, weatherCondition }) => {
   const [selectedHousehold, setSelectedHousehold] = useState(null);
   const [availableEnergy, setAvailableEnergy] = useState([]);
   const [purchaseAmount, setPurchaseAmount] = useState(0);
@@ -10,6 +11,7 @@ const UserPortal = ({ households, transactions, currentHour }) => {
   const [purchaseHistory, setPurchaseHistory] = useState([]);
   const [energyForecast, setEnergyForecast] = useState([]);
   const [notification, setNotification] = useState(null);
+  const [showAIAssistant, setShowAIAssistant] = useState(false);
 
   // Select first household by default
   useEffect(() => {
@@ -131,6 +133,11 @@ const UserPortal = ({ households, transactions, currentHour }) => {
     return new Date(timestamp).toLocaleString();
   };
 
+  // Toggle AI Assistant visibility
+  const toggleAIAssistant = () => {
+    setShowAIAssistant(prev => !prev);
+  };
+
   if (!selectedHousehold) {
     return <div className="user-portal-loading">Loading user portal...</div>;
   }
@@ -158,7 +165,24 @@ const UserPortal = ({ households, transactions, currentHour }) => {
             </select>
           </div>
         </div>
+        
+        <button 
+          className={`ai-toggle-button ${showAIAssistant ? 'active' : ''}`}
+          onClick={toggleAIAssistant}
+        >
+          {showAIAssistant ? 'Hide AI Assistant' : 'Show AI Assistant'}
+        </button>
       </div>
+      
+      {/* AI Assistant (conditionally rendered) */}
+      {showAIAssistant && (
+        <AIEnergyAssistant 
+          household={selectedHousehold}
+          weatherCondition={weatherCondition || 'sunny'}
+          currentHour={currentHour || 12}
+          forecastData={energyForecast}
+        />
+      )}
       
       {/* Main content grid */}
       <div className="portal-content">
