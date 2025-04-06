@@ -1,10 +1,11 @@
 // App.js - Main Application Component
 import React, { useState, useEffect } from 'react';
-import Network from './components/Network';
 import './App.css';
 import CommunityGrid from './components/CommunityGrid';
 import Dashboard from './components/Dashboard';
 import Marketplace from './components/Marketplace';
+import Network from './components/Network';
+import UserPortal from './components/UserPortal';
 import { generateHouseholds, simulateEnergyProduction, simulateEnergyConsumption } from './utils/simulation';
 import { executeMarketplaceTransactions } from './utils/marketplace';
 
@@ -143,6 +144,16 @@ function App() {
             onClick={() => setSelectedTab('dashboard')}>
             Dashboard
           </button>
+          <button 
+            className={selectedTab === 'network' ? 'active' : ''} 
+            onClick={() => setSelectedTab('network')}>
+            Network View
+          </button>
+          <button 
+            className={selectedTab === 'portal' ? 'active' : ''} 
+            onClick={() => setSelectedTab('portal')}>
+            User Portal
+          </button>
         </div>
       </header>
       
@@ -168,6 +179,21 @@ function App() {
             totalEnergySaved={totalEnergySaved}
             totalMoneySaved={totalMoneySaved}
             transactions={transactions}
+          />
+        )}
+        
+        {selectedTab === 'network' && (
+          <Network 
+            households={households} 
+            transactions={transactions} 
+          />
+        )}
+        
+        {selectedTab === 'portal' && (
+          <UserPortal 
+            households={households}
+            transactions={transactions}
+            currentHour={currentHour}
           />
         )}
       </main>

@@ -390,3 +390,295 @@ button.active {
     text-align: center;
   }
 }
+
+/* User Portal Styling */
+.user-portal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.user-portal-header {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.portal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a73e8;
+  margin-bottom: 0.5rem;
+}
+
+.portal-subtitle {
+  color: #666;
+}
+
+.household-selector {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .household-selector {
+    margin-top: 0;
+  }
+}
+
+.selector-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.household-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.portal-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .portal-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.portal-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 1rem;
+}
+
+.energy-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric {
+  background-color: #f5f7fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.metric-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.metric-value.surplus {
+  color: #34a853;
+}
+
+.metric-value.deficit {
+  color: #ea4335;
+}
+
+.forecast-section, .marketplace-section, .purchase-section, .savings-section {
+  margin-top: 1.5rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.chart-container {
+  height: 200px;
+  margin-top: 1rem;
+}
+
+.energy-listings {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.energy-listing {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.seller-name {
+  font-weight: 500;
+}
+
+.energy-amount {
+  font-size: 0.875rem;
+  color: #666;
+  margin-left: 0.5rem;
+}
+
+.energy-price {
+  font-weight: 600;
+  color: #fbbc05;
+}
+
+.purchase-section {
+  background-color: #f0f7ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.estimated-total {
+  text-align: right;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.purchase-button {
+  width: 100%;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.purchase-button:hover {
+  background-color: #0d5bbd;
+}
+
+.notification {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.notification.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.transaction-history {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.transaction-item {
+  padding: 1rem;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.transaction-amount {
+  font-weight: 600;
+}
+
+.transaction-price {
+  font-weight: 700;
+  color: #fbbc05;
+}
+
+.transaction-seller {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.transaction-time {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.savings-section {
+  background-color: #f0f7ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.savings-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.savings-metric {
+  text-align: center;
+}
+
+.savings-metric .metric-value {
+  font-size: 1.125rem;
+}
+
+.no-data-message {
+  color: #666;
+  font-style: italic;
+  padding: 1rem 0;
+}
