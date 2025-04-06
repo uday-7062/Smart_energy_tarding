@@ -9,7 +9,7 @@ const AIEnergyAssistant = ({ household, weatherCondition, currentHour, forecastD
   const [refreshKey, setRefreshKey] = useState(0);
 
   // API configuration - replace with your actual API key
-  const API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+  const API_KEY = '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';
 
   const API_URL = 'https://api.openai.com/v1/chat/completions';
 
