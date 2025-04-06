@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Community Energy Sharing Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Team Information
+- **Team Name**: EnergyPeers
+- **Track**: Sustainability Innovation
+- **Team Members**: 
+  - Uday Kiran Reddy Cheerla
+  - Pranavesh Sunil
+  - Sushama Nimamgadda
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The Community Energy Sharing Platform is a peer-to-peer energy trading simulation that enables households with solar panels to share excess energy with their neighbors. Our platform creates a local energy marketplace where clean energy producers can sell directly to consumers, reducing dependency on the central grid and creating economic benefits for community members.
 
-### `npm start`
+## Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Real-time Energy Monitoring**: Visualize energy production and consumption for each household
+- **P2P Energy Marketplace**: Enable direct trading between neighbors with excess energy and those who need it
+- **Dynamic Pricing Algorithm**: Simulate market-based pricing based on supply and demand
+- **Community Dashboard**: Track community-wide energy metrics and environmental impact
+- **Network Visualization**: Interactive display of energy flows between community members
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
+- React.js for the frontend UI
+- Recharts for data visualization
+- CSS for styling
+- Simulated energy production/consumption models
+- Energy trading algorithms
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Status
 
-### `npm run build`
+This project is currently in the prototype phase. We have implemented:
+- Core simulation engine for energy production and consumption
+- Basic marketplace functionality for energy trading
+- Interactive visualizations of the community energy network
+- Dashboard with key metrics and analytics
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Next steps include:
+- Enhancing the trading algorithm with machine learning
+- Adding user authentication and profiles
+- Implementing blockchain-based transaction ledger
+- Creating a mobile application for real-time monitoring
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation and Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/community-energy-platform.git
 
-### `npm run eject`
+# Navigate to the project directory
+cd community-energy-platform
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Install dependencies
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Start the development server
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*[Screenshots will be added soon]*
 
-## Learn More
+## Future Enhancements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Integration with actual smart meter data
+- Blockchain-based transaction ledger
+- Machine learning algorithms for energy forecasting
+- Mobile application for real-time monitoring
+- Battery storage optimization
+- Community governance model for marketplace rules
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
